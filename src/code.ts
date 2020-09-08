@@ -158,6 +158,7 @@ figma.on('selectionchange', () => {
 
 	for(let i = 0; i < selection.children.length; i++){
 		if(hasPrefix("txt/",selection.children[i].name))names.push(selection.children[i].name);
+		// Needs to match with the content of the translations2.json. Can be a future update.
 	}
 	sendSelectionNames(names);
 });
